@@ -13,10 +13,10 @@ Color Couture is an interactive and visually captivating website dedicated to na
 
 **Installation:**
 
-Clone this repository to your local machine.
-Install the necessary dependencies.
-Configure the app by setting up the required environment variables.
-Start the local development server to run the app.
+1. Clone this repository to your local machine.
+2. Install the necessary dependencies.
+3. Configure the app by setting up the required environment variables.
+4. Start the local development server to run the app.
 
 **Technologies Used:**
 
@@ -26,9 +26,9 @@ Start the local development server to run the app.
 
 **Contributing:**
 
-Fork the repository and create a new branch.
-Make your desired changes and commit them to your branch.
-Push your changes to the branch and open a pull request, providing a detailed description of the modifications you made.
+- Fork the repository and create a new branch.
+- Make your desired changes and commit them to your branch.
+- Push your changes to the branch and open a pull request, providing a detailed description of the modifications you made.
 
 **Contributors:**
 
