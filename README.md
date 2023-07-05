@@ -26,9 +26,9 @@ Color Couture is an interactive and visually captivating website dedicated to na
 
 **Contributing:**
 
-Fork the repository and create a new branch.
-Make your desired changes and commit them to your branch.
-Push your changes to the branch and open a pull request, providing a detailed description of the modifications you made.
+- Fork the repository and create a new branch.
+- Make your desired changes and commit them to your branch.
+- Push your changes to the branch and open a pull request, providing a detailed description of the modifications you made.
 
 **Contributors:**
 
