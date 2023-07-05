@@ -20,9 +20,9 @@ Start the local development server to run the app.
 
 **Technologies Used:**
 
-Front-end: HTML, CSS, JavaScript, Vue.js
-Back-end: Node.js, Express.js
-Database: MySQL
+- Front-end: HTML, CSS, JavaScript, Vue.js
+- Back-end: Node.js, Express.js
+- Database: MySQL
 
 **Contributing:**
 
