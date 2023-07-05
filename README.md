@@ -5,7 +5,7 @@ Color Couture is an interactive and visually captivating website dedicated to na
 **Features:**
 
 1. Appointment booking: Users can schedule appointments for various beauty services offered by Color Couture.
-2. Service selection: Users can choose from a range of services such as nail care, hair styling, makeup, and more.
+2. Service selection: Users can choose from a range of services such as gel application, waxing, aclyrics and many more.
 3. Date and time selection: Users can select their preferred date and time slot for the appointment.
 4. Easy form submission: Users can submit the appointment details through a user-friendly form.
 5. Notification display: Users receive a notification confirming the successful submission of their appointment.
