@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<meta charset="UTF-8">
+</meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</meta>
+<link rel="stylesheet" href="../static/styles/appointments.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Appointment Booking</title>
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav id="navbar" class="nav main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="#service-list">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div id="appointment-form-container" >
+<div id="app">
+<form id="appointment-form" v-on:submit="handleSubmit">
+    <label for="customer-name">Customer Name:</label>
+    <input type="text" id="customer-name" name="customer_name" v-model="customer_name" required>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" v-model="date" required>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" v-model="time" required>
+
+    <label for="service">Service:</label>
+    <select id="service" name="service" v-model="service" required>
+        <option value="">Select a service</option>
+        <option value="gel">Gel Application</option>
+        <option value="manicure">Manicure</option>
+        <option value="pedicure">Pedicure</option>
+        <option value="tips">Tips</option>
+        <option value="stick-ons">Stick-ons</option>
+        <option value="Builder gel">Builder gel</option>
+        <option value="Aclyric nails">Acrylic nails</option>
+        <option value="Armpit waxing">Armpit waxing</option>
+        <option value="legs/hands waxing">Legs/hands waxing</option>
+    </select>
+    <button type="submit">Book Appointment</button>
+    <div id="showNotification" v-if="notificationMessage">
+        {{ notificationMessage }}
+    </div>
+</form>
+</div>
+</div>
+
+<section id="service-list">
+    <h5 class="section-header">Services</h5>
+    <div class="line"></div>
+    <div class="serve">
+        <div class="service-item">
+            <p class="gel">Gel application</p>
+            <p class="price">600</p> 
+        </div>
+        <div class="service-item">
+            <p class="mani">Manicure</p>
+            <p class="price">400</p>
+        </div>
+        <div class="service-item">
+            <p class="pedi">Pedicure</p>
+            <p class="price">700</p>
+        </div>
+        <div class="service-item">
+            <p class="tips">Tips</p>
+            <p class="price">800</p>
+        </div>
+        <div class="service-item">
+            <p class="stick-ons">Stick-ons</p>
+            <p class="price">600</p>
+        </div>
+        <div class="service-item">
+            <p class="builder">Builder gel</p>
+            <p class="price">800</p>
+        </div>
+        <div class="service-item">
+            <p class="ombre">Ombre gel</p>
+            <p class="price">700</p>
+        </div>
+        <div class="service-item">
+            <p class="aclyrics">Acrylic nails</p>
+            <p class="price">2000</p>
+        </div>
+        <div class="service-item">
+            <p class="armpit-wax">Armpit waxing</p>
+            <p class="price">400</p>
+        </div>
+        <div class="service-item">
+            <p class="legs-hands-wax">Legs/hands waxing</p>
+            <p class="price">700</p>
+        </div>
+    </div>
+    <div class="line"></div>
+    <p class="nb">*...price in kenya shilling (ksh)...*</p>
+    <p class="hours">*...open every Monday to Sunday from 9:30AM to 7PM...*</p>
+</section>
+
+
+<div id="contact">
+    <a class="reach-us" href="https://www.instagram.com/polished_nailsbar/"><i class="fa fa-instagram"></i>Instagram</a>
+    <a class="reach-us" href="file:///Users/katemwende/Desktop/Portfolio%20code/web_flask/templates/index.html#about">
+        <i class="fab fa-google"></i>Google</a>
+    <button class="reach-us phone">
+        <a href="tel:+254725535822" class="phone-number">Call us</a>
+        <i class="fa fa-phone"></i>
+    </button>
+    <footer class="main-footer">
+        <h4 class="shop-name shop-name-small">Color Couture, a world of elegance</h4>
+    </footer>
+</div>
+<script src="../script.js"></script>
+</body>
+
+</html>

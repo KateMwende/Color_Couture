@@ -1,0 +1,192 @@
+/*...main-header section...*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    visibility: visible;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../Images/top-view-composition-nail-care-products_23-2148974503.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.main-header {
+    border-bottom: thin;
+    border-bottom-style: solid;
+    height: 25px;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .2em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.main-nav {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+/*...Form styling...*/
+#appointment-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 1em;
+    z-index: 999;
+    position: relative;
+    text-align: left;
+}
+#appointment-form {
+    height: max-content;
+    text-align: left;
+}
+#appointment-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#appointment-form input[type="date"],
+#appointment-form input[type="time"],
+#appointment-form input[type="text"],
+#appointment-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+#appointment-form button[type="submit"] {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#appointment-form button[type="submit"]:hover {
+    background-color:burlywood;
+}
+#showNotification {
+    padding-top: .6em;
+    text-align: center;
+}
+/*...Services styling...*/
+.section-header {
+    font-size: 30px;
+    margin-bottom: 0.3em;
+    margin-left: 4.5em;
+}
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #333;
+    width: 30%;
+}
+@media (max-width: 768px) {
+    .service-item {
+        flex-wrap: wrap;
+    }
+.gel, .mani, .pedi, .tips, .stick-ons,
+.builder, .ombre, .aclyrics, .armpit-wax, .legs-hands-wax {
+    margin: 0.3em;
+}
+.service-item .price {
+    margin: 0.3em;
+}
+.price {
+    margin-right: 1100px;
+    font-weight: bold;
+}}
+.nb {
+    padding-left: 6em;
+}
+.hours {
+    padding-left: 1em;
+}
+/*...contact section...*/
+#contact {
+    text-align: right;
+    height: 70px;
+    width: 100%;
+}
+.reach-us {
+    text-decoration: none;
+    text-align: right;
+    padding-right: 1em;
+    height: 50px;
+    padding-top: 1em;
+}
+.reach-us:hover {
+    text-decoration: underline;
+}
+.fa-instagram {
+    background:indianred;
+    border-radius: 90%;
+    padding: .2em;
+    margin-right: .3em;
+    color: white;
+}
+
+.fa-google {
+    background:indianred;
+    border-radius: 80%;
+    padding: .2em;
+    margin-right: .3em;
+    color: white;
+}
+.reach-us.phone {
+    background: none;
+    border: none;
+    font-size: 15px;
+    margin-right: .3em;
+}
+.phone-number {
+    text-decoration: none;
+}
+.main-footer h4 {
+    padding-right: .5em;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 15px;
+    font-style: italic;
+    text-align: right;
+    font-weight: lighter;
+}

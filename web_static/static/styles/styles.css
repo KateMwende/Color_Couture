@@ -1,0 +1,337 @@
+
+/*...main-header section...*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+}
+html body {
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    border-bottom: thin;
+    border-bottom-style: solid;
+    height: 25px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+}
+.nav ul {
+    margin: 0;
+}
+.nav li{
+    display: inline;
+}
+.nav a {
+    display: inline-block;
+    padding: .2em;
+    color: black;
+    text-decoration: none;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+.main-nav {
+     text-align: center;
+     font-weight: lighter;
+     font-size: 1em;
+}
+.main-nav li {
+    padding: 0 5%;
+}
+/*...Home section....*/
+.shop-name {
+    text-align: center;
+    padding-top: 1em;
+    margin: 0;
+    font-size: 2em;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+#home {
+    height: 800px;
+    background-color: burlywood;
+}
+/*....Transition styling....*/
+.slider-frame {
+    float: left;
+    position: relative;
+    padding: 3em 0;
+    width: 60%;
+    height: 750px; 
+    overflow: hidden;
+    align-items: right;
+    justify-content: right;
+}
+.slide-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out; 
+    object-position: 100% 0;
+}
+.img-size {
+    flex: 0 0 100%;
+    object-fit: contain;
+}
+@keyframes slideshow {
+    0%, 100% { transform: translateX(0%); }
+    16.666% { transform: translateX(-100%); }
+    33.333% { transform: translateX(-200%); }
+    50% { transform: translateX(-300%); }
+    66.666% { transform: translateX(-400%); }
+    83.333% { transform: translateX(-500%); }
+}
+/*....End of transition styling....*/
+.blog-section {
+    float: right;
+    width: 40%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 6em;
+    padding-right: 3em;
+    text-align: center;
+   
+}
+.blog-intro {
+    margin: 0;
+    padding: 0;
+}
+.blog-point {
+    display: inline-block;
+    padding: 2px 20px;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-top: 2px;
+}
+.blog-header {
+    margin: 0;
+    padding-bottom: .5em;
+}
+/*...about section...*/
+#about {
+    height: 700px;
+}
+.section-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #333;
+    text-align: left;
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-left: .5em;
+    margin: 0;
+}
+#about .section-header {
+    padding-left: 0;
+}
+.content-section {
+    margin: 0;
+    height: 500px;
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+    background-color:bisque;
+    padding-left: 1em;
+}
+.content-section.container {
+    padding-top: 0;
+    margin: 0 auto;
+    padding: .5em 1.5em;
+    text-align: left;
+}
+.container {
+    max-width: 900px;
+}
+.appointment {
+    font-size: 2.5em;
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.appointment h4 {
+    font-weight: lighter;
+    font-style: italic;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.appointment .line {
+  height: 2px;
+  background-color: #333;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*...services section...*/
+#services {
+    background-color: antiquewhite;
+}
+#services .section-header {
+    padding-bottom: .2em;
+}
+.serve {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    height: 950px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration-line: underline;
+    font-size: .7em;
+}
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.gel {
+    margin-left: 2em;
+    color: #333;
+    background-image: url("../Images/Gel.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+   
+}
+.pedi {
+    color: #333;
+    background-image: url("../Images/Pedicure.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 400px;   
+}
+.mani {
+    color: #333;
+    background-image: url("../Images/Manicure.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    margin-right: 2em;
+}
+.tips {
+    margin-left: 2em;
+    color: black;
+    background-image: url("../Images/Tips.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+}
+.builder {
+    color: #333;
+    background-image: url("../Images/Builder\ gel.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+}
+.ombre {
+    color: #333;
+    background-image: url("../Images/Ombre.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    margin-right: 2em;
+}
+.aclyrics {
+    color: #333;
+    background-image: url("../Images/Aclyrics.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    border-radius: 10%;
+    margin-left: 2em;
+}
+.wax {
+    color: #333;
+    background-image: url("../Images/Waxing.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+}
+
+/*...contact section...*/
+#contact {
+    text-align: right;
+    height: 60px;
+    width: 100%;
+    background-color: blanchedalmond;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.reach-us {
+    text-decoration: none;
+    text-align: right;
+    padding-right: 1em;
+    height: 50px;
+    padding-top: 1em;
+}
+.reach-us:hover {
+    text-decoration: underline;
+}
+.fa-instagram {
+    background: indianred;
+    padding: .2em;
+    margin: .3em;
+    color: white;
+    border-radius: 80%;
+}
+.fa-google {
+    background: indianred;
+    padding: .2em;
+    margin: .3em;
+    color: white;
+    border-radius: 80%;
+}
+.fa-phone {
+    font-size: 20px;
+    border-radius: 90%;
+    padding: 0;
+    margin: 0;
+}
+.reach-us.phone {
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+.phone-number {
+    text-decoration: none;
+}
+.main-footer h4 {
+    padding-right: .5em;
+    padding-bottom: .5em;
+    margin: 0;
+    font-size: 15px;
+    font-style: italic;
+    text-align: right;
+    font-weight: lighter;
+    background-color: blanchedalmond;
+    background-size: cover;
+    padding-top: 0;
+}
