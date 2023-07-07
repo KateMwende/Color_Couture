@@ -3,7 +3,7 @@ const mysql = require('mysql');
 const app = express();
 const port = 3000;
 const path = require('path');
-const DB_HOST = process.env.DB_HOST || '127.0.0.1';
+const DB_HOST = process.env.DB_HOST || '35.160.120.126';
 
 // MySQL Connection
 const connection = mysql.createConnection({
