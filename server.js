@@ -6,7 +6,7 @@ const path = require('path');
 
 // MySQL Connection
 const connection = mysql.createConnection({
-  host: '127.0.0.1',
+  host: process.env.DB_HOST,
   user: 'kate',
   password: 'Iam....4',
   database: 'color_couture'
