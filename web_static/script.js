@@ -12,7 +12,7 @@ const app = Vue.createApp({
         handleSubmit(event) {
             event.preventDefault();
             // Make a POST request to the server
-            axios.post('http://localhost:3000/submit', {
+            axios.post('https://color-couture.onrender.com/submit', {
                 customer_name: this.customer_name,
                 date: moment(this.date, 'DD-MM-YY').format('YYYY-MM-DD'),
                 time: this.time,
