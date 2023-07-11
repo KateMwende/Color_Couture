@@ -3,6 +3,8 @@
 Color Couture is an interactive and visually captivating website dedicated to nail care services. Explore our vast collection of trendy designs and premium products to indulge in a luxurious and personalized nail care experience. Discover the latest nail art trends, book appointments, and stay updated with our expert tips and recommendations. Elevate your style and express your creativity with Color Couture.
 Here is a link of the deployed site https://color-couture.onrender.com
 
+A snippet of the project: <img width="1440" alt="Screenshot 2023-07-11 at 18 14 18" src="https://github.com/KateMwende/Color_Couture/assets/113633390/9d51e548-648d-4e50-b663-5abe340a17a0">
+
 **Features:**
 
 1. Appointment booking: Users can schedule appointments for various beauty services offered by Color Couture.
