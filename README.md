@@ -1,6 +1,10 @@
 # Color Couture
 
 Color Couture is an interactive and visually captivating website dedicated to nail care services. Explore our vast collection of trendy designs and premium products to indulge in a luxurious and personalized nail care experience. Discover the latest nail art trends, book appointments, and stay updated with our expert tips and recommendations. Elevate your style and express your creativity with Color Couture.
+Here is a link of the deployed site https://color-couture.onrender.com
+
+A snippet of the project: <img width="1436" alt="Screenshot 2023-07-11 at 18 14 18" src="https://github.com/KateMwende/Color_Couture/assets/113633390/c8b88834-bb5c-4a34-856d-4854a0500b2e">
+
 
 **Features:**
 
@@ -33,3 +37,4 @@ Color Couture is an interactive and visually captivating website dedicated to na
 **Contributors:**
 
 Kate Mwende
+linkedin: https://www.linkedin.com/in/catherine-munyoki-ba47bb12b
