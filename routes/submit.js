@@ -3,6 +3,7 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 
 module.exports = (connection) => {
+   console.log('hey');
   // Create an appointment (POST route)
   router.post('/', (req, res) => {
     const { customer_name, date, time, service } = req.body;
@@ -46,7 +47,7 @@ module.exports = (connection) => {
     }
   });
 });
-
+ console.log('service:', service);
   // Get all appointments
   router.get('/', (req, res) => {
     // Retrieve all appointments from the database
