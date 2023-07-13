@@ -30,7 +30,7 @@ module.exports = (connection) => {
       pass: 'xvdvrzvqirzgjeui'
     }
   });
-
+ console.log('service:', service);
   const mailOptions = {
     from: 'katemunyoki76@gmail.com',
     to: 'kmwende419@gmail.com',
