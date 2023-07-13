@@ -40,6 +40,29 @@ module.exports = (connection) => {
       console.log('Email sent:', info.response);
     }
   });
+      // Send email using Nodemailer
+  const transporter = nodemailer.createTransport({
+    service: 'yahoo',
+    auth: {
+      user: 'mwende94@yahoo.com',
+      pass: 'Lovelykate'
+    }
+  });
+
+  const mailOptions = {
+    from: 'mwende94@yahoo.com',
+    to: 'kmwende419@gmail.com',
+    subject: 'New Appointment',
+    text: 'A new appointment has been submitted.'
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+    } else {
+      console.log('Email sent:', info.response);
+    }
+  });
 });
 
   // Get all appointments
