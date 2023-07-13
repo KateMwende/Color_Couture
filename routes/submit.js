@@ -23,7 +23,7 @@ module.exports = (connection) => {
     service: 'gmail',
     auth: {
       user: 'katemunyoki76@gmail.com',
-      pass: 'pseudomail'
+      pass: 'xvdvrzvqirzgjeui'
     }
   });
 
