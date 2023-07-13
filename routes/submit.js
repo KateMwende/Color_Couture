@@ -47,7 +47,7 @@ module.exports = (connection) => {
     }
   });
 });
- console.log('service:', service);
+ console.log('hey');
   // Get all appointments
   router.get('/', (req, res) => {
     // Retrieve all appointments from the database
