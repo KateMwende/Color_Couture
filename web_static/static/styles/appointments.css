@@ -109,8 +109,23 @@ html body {
 }
 .service-item {
     display: flex;
+    align-items:center;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 0;
+    margin-left: .3em;
+    flex-wrap: wrap;
+}
+.price {
+    padding-right: 1050px;
+    font-weight: bold;
+    align-self: center; 
+    white-space: nowrap;
+}
+.nb {
+    padding-left: 6em;
+}
+.hours {
+    padding-left: 1em;
 }
 .line {
     position: absolute;
@@ -119,27 +134,6 @@ html body {
     height: 2px;
     background-color: #333;
     width: 30%;
-}
-@media (max-width: 768px) {
-    .service-item {
-        flex-wrap: wrap;
-    }
-.gel, .mani, .pedi, .tips, .stick-ons,
-.builder, .ombre, .aclyrics, .armpit-wax, .legs-hands-wax {
-    margin: 0.3em;
-}
-.service-item .price {
-    margin: 0.3em;
-}
-.price {
-    margin-right: 1100px;
-    font-weight: bold;
-}}
-.nb {
-    padding-left: 6em;
-}
-.hours {
-    padding-left: 1em;
 }
 /*...contact section...*/
 #contact {
