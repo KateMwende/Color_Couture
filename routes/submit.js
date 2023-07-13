@@ -20,7 +20,7 @@ module.exports = (connection) => {
     });
       // Send email using Nodemailer
   const transporter = nodemailer.createTransport({
-    service: 'yahoo',
+    host: 'smtp.yahoo.com',
     auth: {
       user: 'mwende94@yahoo.com',
       pass: 'Lovelykate'
