@@ -33,27 +33,4 @@ module.exports = (connection) => {
     text: 'A new appointment has been submitted.'
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.error('Error sending email:', error);
-    } else {
-      console.log('Email sent:', info.response);
-    }
-  });
-});
-
-  // Get all appointments
-  router.get('/', (req, res) => {
-    // Retrieve all appointments from the database
-    connection.query('SELECT * FROM appointments', (error, results) => {
-      if (error) {
-        console.error('Error retrieving appointments:', error);
-        res.status(500).json({ error: 'Failed to retrieve appointments' });
-        return;
-      }
-      res.json(results);
-    });
-  });
-
-  return router;
 };
