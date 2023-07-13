@@ -28,7 +28,7 @@ module.exports = (connection) => {
   });
 
   const mailOptions = {
-    from: 'mwende94@yahoo.com',
+    from: 'katemunyoki76@gmail.com',
     to: 'kmwende419@gmail.com',
     subject: 'New Appointment',
     text: 'A new appointment has been submitted.'
