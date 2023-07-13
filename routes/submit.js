@@ -6,6 +6,10 @@ module.exports = (connection) => {
   // Create an appointment (POST route)
   router.post('/', (req, res) => {
     const { customer_name, date, time, service } = req.body;
+    console.log('customer_name:', customer_name);
+    console.log('date:', date);
+    console.log('time:', time);
+    console.log('service:', service);
     const query = 'INSERT INTO appointments (customer_name, date, time, service) VALUES (?, ?, ?, ?)';
     const values = [customer_name, date, time, service];
     // Execute the query
