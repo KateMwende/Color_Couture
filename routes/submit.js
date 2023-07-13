@@ -31,7 +31,7 @@ module.exports = (connection) => {
     from: 'katemunyoki76@gmail.com',
     to: 'kmwende419@gmail.com',
     subject: 'New Appointment',
-    text: 'A new appointment has been submitted.'
+    text: 'A new appointment has been submitted.\n\nCustomer Name: ${customer_name}\nDate: ${date}\nTime: ${time}\nService: ${service}'
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
