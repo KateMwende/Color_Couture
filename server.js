@@ -1,5 +1,6 @@
 const express = require('express');
 require('dotenv').config();
+const nodemailer = require('nodemailer');
 const mysql = require('mysql');
 const app = express();
 const port = 3000;
