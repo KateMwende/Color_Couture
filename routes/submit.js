@@ -3,7 +3,6 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 
 module.exports = (connection) => {
-   console.log('hey');
   // Create an appointment (POST route)
   router.post('/', (req, res) => {
     const { customer_name, date, time, service } = req.body;
@@ -36,7 +35,7 @@ module.exports = (connection) => {
     from: 'katemunyoki76@gmail.com',
     to: 'kmwende419@gmail.com',
     subject: 'New Appointment',
-    text: 'A new appointment has been submitted.\n\nCustomer Name: ${customer_name}\nDate: ${date}\nTime: ${time}\nService: ${service}'
+    text: `A new appointment has been submitted.\n\nCustomer Name: ${customer_name}\nDate: ${date}\nTime: ${time}\nService: ${service}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -47,7 +46,7 @@ module.exports = (connection) => {
     }
   });
 });
- console.log('hey');
+
   // Get all appointments
   router.get('/', (req, res) => {
     // Retrieve all appointments from the database
