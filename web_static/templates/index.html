@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <meta charset="UTF-8"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-    <link rel="stylesheet" href="../static/styles/styles.css"/> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Color Couture</title>
   </head>
   <body>
@@ -19,132 +27,211 @@
         </ul>
       </nav>
     </header>
+
     <section id="home">
-      <h3 class="shop-name shop-name-large">COLOR COUTURE</h3>
-    <div class="slider-frame">
-      <div class="slide-images">
-        <img class="img-size" src="../static/Images/a245fad1-ea3f-49f7-a9b8-2b915307e3aa.jpeg" alt="Image 1"/>
-        <img class="img-size" src="../static/Images/3d400d1b-f7cf-4859-b9e1-c32302eb84c2.jpeg" alt="Image 2"/>
-        <img class="img-size" src="../static/Images/5996baf9-8373-4e7e-b40e-5243a71dc974.jpeg" alt="Image 3"/>
-        <img class="img-size" src="../static/Images/51e56806-4392-4d1e-b1b0-cb618dd0d72f.jpeg" alt="Image 4"/>
-        <img class="img-size" src="../static/Images/099ad734-b0e8-431e-b790-a84252375489.jpeg" alt="Image 5"/>
-        <img class="img-size" src="../static/Images/09c0850c-b167-4390-8aa5-55a7209d1441.jpeg" alt="Image 6"/>
-        <img class="img-size" src="../static/Images/4ea474e2-221b-4848-86e0-68cd315944e2.jpeg" alt="Image 7"/>
-        <img class="img-size" src="../static/Images/7e0a081f-d7c6-42a3-a19c-7d29040cfb55.jpeg" alt="Image 8"/>
-        <img class="img-size" src="../static/Images/20230114_204802.jpg" alt="Image 9"/>
-        <img class="img-size" src="../static/Images/9694baab-157f-4c63-b0d1-ca217fdc8de6.jpeg" alt="Image 10"/>
-        <img class="img-size" src="../static/Images/985168a4-a657-4678-a1b5-3e6d1585a88d.jpeg" alt="Image 11"/>
-        <img class="img-size" src="../static/Images/20221016_213641.jpg" alt="Image 12"/>
-        <img class="img-size" src="../static/Images/20230402_160714.jpg" alt="Image 13"/>
-        <img class="img-size" src="../static/Images/ce1e10cd-ae25-451c-99de-70552df3a22f.jpeg" alt="Image 14"/>
-        <img class="img-size" src="../static/Images/faea5b7f-f257-4e45-9f49-9c739877d6f5.jpeg" alt="Image 15"/>
-        <img class="img-size" src="../static/Images/Snapchat-1046439402.jpg"  alt="Image 16"/>
-        <img class="img-size" src="../static/Images/Snapchat-1329918273.jpg" alt="Image 17"/>
-        <img class="img-size" src="../static/Images/Snapchat-797103577.jpg" alt="Image 18"/>
-        <img class="img-size" src="../static/Images/IMG-20190504-WA0009.jpg" alt="Image 19"/>
-      </div>  
-    </div>
-      <script>
-        const slideImages = document.querySelector('.slide-images');
-        const imageWidth = slideImages.clientWidth;
-        const totalImages = slideImages.childElementCount;
-        let currentSlide = 0;
-
-        function showSlide(slideIndex) {
-          slideImages.style.transform = `translateX(-${slideIndex * imageWidth}px)`;
-        }
-
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % totalImages;
-          showSlide(currentSlide);
-        }
-
-        // Auto advance to the next slide every 3 seconds
-        setInterval(nextSlide, 3000);
-      </script>
-      <div class="blog-section">
-        <p class="blog-intro">
-          <h4 class="blog-header">Trendy Nail Designs</h4>
-          <p class="blog-point">Stay up to date with the latest nail trends and be inspired by our gallery of innovative and eye-catching designs. From
-          intricate patterns and geometric shapes to elegant French manicures and dazzling nail art, we'll showcase a variety of
-          styles that will elevate your nail game.</p>
-          <h4 class="blog-header">Nail Care Tips and Tricks</h4>
-          <p class="blog-point">Learn how to maintain healthy and strong nails with our expert advice. We'll share tips on proper nail care routines,
-          choosing the right products, and effective techniques for achieving beautiful and long-lasting manicures. Discover the
-          secrets to flawless nails and ensure your fingertips are always on point.</p>
-          <h4 class="blog-header">Colorful Nail Polish Collections</h4>
-          <p class="blog-point">Explore a kaleidoscope of colors as we highlight our extensive range of nail polish collections. From bold and vibrant
-          shades to soft pastels and sophisticated neutrals, we'll introduce you to our curated selection of high-quality
-          polishes. Find your perfect hue and get ready to express your personal style through your nails.</p>
-          <h4 class="blog-header">Meet Our Talented Nail Technicians</h4>
-          <p class="blog-point">Get to know our team of skilled and passionate nail technicians who bring your nail dreams to life. We'll introduce you
-          to their unique styles, expertise, and dedication to delivering exceptional services. Learn about their inspirations,
-          training, and the joy they find in creating beautiful nails for our valued clients.</p>
-        </p>
+      <div class="header-content">
+        <h3 class="shop-name shop-name-large">COLOR COUTURE</h3>
+        <button class="phone">
+          <a href="tel:+254725535822" class="phone-number">Call us</a>
+          <i class="fa fa-phone"></i>
+        </button>
       </div>
+      <div class="line"></div>
+      <div class="line2"></div>
+      <div class="slider-frame">
+        <div class="slide-images">
+          <img
+            class="img-size"
+            src="../static/Images/a245fad1-ea3f-49f7-a9b8-2b915307e3aa.jpeg"
+            alt="Image 1"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/3d400d1b-f7cf-4859-b9e1-c32302eb84c2.jpeg"
+            alt="Image 2"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/5996baf9-8373-4e7e-b40e-5243a71dc974.jpeg"
+            alt="Image 3"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/51e56806-4392-4d1e-b1b0-cb618dd0d72f.jpeg"
+            alt="Image 4"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/099ad734-b0e8-431e-b790-a84252375489.jpeg"
+            alt="Image 5"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/09c0850c-b167-4390-8aa5-55a7209d1441.jpeg"
+            alt="Image 6"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/4ea474e2-221b-4848-86e0-68cd315944e2.jpeg"
+            alt="Image 7"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/7e0a081f-d7c6-42a3-a19c-7d29040cfb55.jpeg"
+            alt="Image 8"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/9694baab-157f-4c63-b0d1-ca217fdc8de6.jpeg"
+            alt="Image 10"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/985168a4-a657-4678-a1b5-3e6d1585a88d.jpeg"
+            alt="Image 11"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/20221016_213641.jpg"
+            alt="Image 12"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/ce1e10cd-ae25-451c-99de-70552df3a22f.jpeg"
+            alt="Image 14"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/faea5b7f-f257-4e45-9f49-9c739877d6f5.jpeg"
+            alt="Image 15"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/Snapchat-1329918273.jpg"
+            alt="Image 17"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/Snapchat-797103577.jpg"
+            alt="Image 18"
+          />
+          <img
+            class="img-size"
+            src="../static/Images/IMG-20190504-WA0009.jpg"
+            alt="Image 19"
+          />
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const slideImages = document.querySelector('.slide-images');
+          const imageWidth = slideImages.clientWidth;
+          const totalImages = slideImages.childElementCount;
+          let currentSlide = 0;
+
+          function showSlide(slideIndex) {
+            slideImages.style.transform = `translateX(-${
+              slideIndex * imageWidth
+            }px)`;
+          }
+
+          function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalImages;
+            showSlide(currentSlide);
+          }
+
+          // Auto advance to the next slide every 3 seconds
+          setInterval(nextSlide, 3000);
+        });
+      </script>
     </section>
+
     <section id="about" class="content-section">
       <h3 class="section-header">ABOUT</h3>
       <p class="container">
-        Since our establishment in 2019, we have been committed to providing exceptional nail services and creating a
-        welcoming atmosphere for our valued clients.
+        Since our establishment in 2019, we have been committed to providing
+        exceptional nail services and creating a welcoming atmosphere for our
+        valued clients.
       </p>
-      <p class="container">What sets Color Couture apart from other nail parlors is our unwavering dedication to personalized attention and customer satisfaction.</p>
-      <p class="container">We understand that no two clients are the same, and so we take the time to listen,
-      understand individual preferences, and offer tailored recommendations.</p>
-      <p class="container">Whether a client desires a simple
-      manicure, a bold gel application, or a relaxing pedicure, the team at Color Couture ensures that every
-      experience is a delight.</p>
-      <p class="container">We take pride in our warm and friendly salon atmosphere, where clients can relax and indulge in a pampering nail care
-        experience. Our goal is to exceed expectations and leave our clients feeling satisfied and rejuvenated.</p>
-      <p class="container">We appreciate the trust our clients have placed in us over the years and look forward to welcoming new clients into
-        our Color Couture family.</p>
+      <p class="container">
+        What sets Color Couture apart from other nail parlors is our unwavering
+        dedication to personalized attention and customer satisfaction.
+      </p>
+      <p class="container">
+        We understand that no two clients are the same, and so we take the time
+        to listen, understand individual preferences, and offer tailored
+        recommendations.
+      </p>
+      <p class="container">
+        Whether a client desires a simple manicure, a bold gel application, or a
+        relaxing pedicure, the team at Color Couture ensures that every
+        experience is a delight.
+      </p>
+      <p class="container">
+        We take pride in our warm and friendly salon atmosphere, where clients
+        can relax and indulge in a pampering nail care experience. Our goal is
+        to exceed expectations and leave our clients feeling satisfied and
+        rejuvenated.
+      </p>
+      <p class="container">
+        We appreciate the trust our clients have placed in us over the years and
+        look forward to welcoming new clients into our Color Couture family.
+      </p>
       <div class="appointment">
         <div class="line"></div>
-        <h2>Book an Appointment</h2>
-        <h4 class="fade"> <a href="appointments.html">Book an Appointment</a></h4>
+        <div class="line2"></div>
+        <h3>BOOK AN</h3>
+        <h1>APPOINTMENT</h1>
+        <h2 class="fade">
+          <a href="appointments.html"
+            ><button class="button">Book Now</button></a
+          >
+        </h2>
+        <div class="line2"></div>
         <div class="line"></div>
       </div>
     </section>
     <section id="services">
       <h5 class="section-header">Services</h5>
       <div class="serve">
-      <div class="service-item">
-      <p class="gel">Gel application</p>
-      </div>
-      <div class="service-item">
-      <p class="pedi">Pedicure</p>
-      </div>
-      <div class="service-item">
-      <p class="mani">Manicure</p>
-      </div>
-      <div class="service-item">
-      <p class="tips">Tips and Stick-ons</p> 
-      </div>
-      <div class="service-item">
-      <p class="builder">Builder gel</p>
-      </div>
-      <div class="service-item">
-      <p class="ombre">Ombre gel</p>
-      </div>
-      <div class="service-item">
-      <p class="aclyrics">Acrylic nails</p>
-      </div>
-      <div class="service-item">
-      <p class="wax">Waxing</p>
-      </div>
+        <div class="service-item">
+          <p class="gel">Gel application</p>
+        </div>
+        <div class="service-item">
+          <p class="pedi">Pedicure</p>
+        </div>
+        <div class="service-item">
+          <p class="mani">Manicure</p>
+        </div>
+        <div class="service-item">
+          <p class="tips">Tips and Stick-ons</p>
+        </div>
+        <div class="service-item">
+          <p class="builder">Builder gel</p>
+        </div>
+        <div class="service-item">
+          <p class="ombre">Ombre gel</p>
+        </div>
+        <div class="service-item">
+          <p class="aclyrics">Acrylic nails</p>
+        </div>
+        <div class="service-item">
+          <p class="wax">Waxing</p>
+        </div>
       </div>
     </section>
-  <div id="contact">
-    <a class="reach-us" href="https://www.instagram.com/polished_nailsbar/"><i class="fa fa-instagram"></i>Instagram</a>
-    <a class="reach-us" href="https://color-couture.onrender.com/"><i class="fab fa-google"></i>Google</a>
-    <button class="reach-us phone">
-      <a href="tel:+254725535822" class="phone-number">Call us</a>
-      <i class="fa fa-phone"></i>
-    </button>
-    <footer class="main-footer">
-    <h4 class="shop-name shop-name-small">Color Couture, a world of elegance</h4>
-    </footer>
-  </div>
+    <div id="contact">
+      <a class="reach-us" href="https://www.instagram.com/polished_nailsbar/"
+        ><i class="fa fa-instagram"></i>Instagram</a
+      >
+      <a class="reach-us" href="https://color-couture.onrender.com/"
+        ><i class="fab fa-google"></i>Google</a
+      >
+      <footer class="main-footer">
+        <h4 class="shop-name shop-name-small">
+          Color Couture, a world of elegance
+        </h4>
+      </footer>
+    </div>
   </body>
 </html>

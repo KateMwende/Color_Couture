@@ -6,16 +6,15 @@ const app = express();
 const port = 3000;
 const path = require('path');
 
-
 // MySQL Connection
 const connection = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
+  database: process.env.DB_NAME,
 });
 
-connection.connect(error => {
+connection.connect((error) => {
   if (error) {
     console.error('Error connecting to the database:', error);
     return;
@@ -33,17 +32,20 @@ app.use(express.static(path.join(__dirname, 'web_static/templates')));
 // Serve static files from node_modules directory
 app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 
-
 // Routes
 const servicesRouter = require('./routes/services')(connection);
 const submitRouter = require('./routes/submit')(connection);
 const appointmentsRoute = require('./routes/appointments')(connection);
 // Route for serving the HTML file
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: path.join(__dirname, 'web_static/templates') });
+  res.sendFile('index.html', {
+    root: path.join(__dirname, 'web_static/templates'),
+  });
 });
 app.get('/appointments.html', (req, res) => {
-  res.sendFile('appointments.html', { root: path.join(__dirname, 'web_static/templates') });
+  res.sendFile('appointments.html', {
+    root: path.join(__dirname, 'web_static/templates'),
+  });
 });
 
 app.use('/api/services', servicesRouter);
