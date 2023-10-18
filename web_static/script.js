@@ -5,6 +5,7 @@ const app = Vue.createApp({
       date: '',
       time: '',
       service: '',
+      errorMessage: '',
       showNotification: false,
     };
   },
