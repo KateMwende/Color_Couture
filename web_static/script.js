@@ -5,21 +5,11 @@ const app = Vue.createApp({
       date: '',
       time: '',
       service: '',
-      errorMessage: '',
       showNotification: false,
     };
   },
   methods: {
     handleSubmit(event) {
-      // Check if the selected date is in the past
-      const selectedDate = moment(this.date, 'DD-MM-YYYY');
-      const today = moment();
-
-      if (selectedDate.isBefore(today, 'day')) {
-        // Display an error message to the user
-        this.errorMessage = 'Please select a future date.';
-        return;
-      }
       event.preventDefault();
       // Make a POST request to the server
       axios

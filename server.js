@@ -22,6 +22,14 @@ connection.connect((error) => {
   console.log('Connected to the database');
 });
 
+// Enable CORS for all routes
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*'); // This allows requests from any origin.
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -35,7 +43,7 @@ app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 // Routes
 const servicesRouter = require('./routes/services')(connection);
 const submitRouter = require('./routes/submit')(connection);
-const appointmentsRoute = require('./routes/appointments')(connection);
+
 // Route for serving the HTML file
 app.get('/', (req, res) => {
   res.sendFile('index.html', {
@@ -50,7 +58,6 @@ app.get('/appointments.html', (req, res) => {
 
 app.use('/api/services', servicesRouter);
 app.use('/submit', submitRouter);
-app.use('/api/appointments', appointmentsRoute);
 
 // Start the server
 app.listen(port, () => {
