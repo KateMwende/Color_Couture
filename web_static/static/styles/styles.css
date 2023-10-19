@@ -412,7 +412,7 @@ html body {
 
     .nav-list a {
         font-size: 14px; /* Reduce the font size */
-        font-weight: bold;
+        font-weight: normal;
     }
     .header-content {
         display: flex;
@@ -479,6 +479,7 @@ html body {
     }
     .serve {
         grid-template-columns: repeat(1, 1fr);
+        text-decoration-line: none;
     }
     .gel, .pedi, .mani, .tips, .builder, .ombre, .aclyrics, .wax {
         width: 70%;
