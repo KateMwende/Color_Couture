@@ -412,7 +412,7 @@ html body {
 
     .nav-list a {
         font-size: 14px; /* Reduce the font size */
-        font-weight: normal;
+        font-weight: bold;
     }
     .header-content {
         display: flex;
@@ -422,9 +422,9 @@ html body {
     }
     .shop-name {
         text-align: left;
-        font-size: 1em;
+        font-size: 1.3em;
         margin-left: 7px;
-        font-weight: bold;
+        font-weight: bolder;
     }
 
     .phone-number {
@@ -451,6 +451,9 @@ html body {
     }
     .img-size {
         max-height: 500px;
+    }
+    .section-header {
+        font-weight: bold;
     }
     .appointment .line {
         height: 2px;
