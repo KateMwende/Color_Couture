@@ -449,6 +449,28 @@ html body {
     .img-size {
         max-height: 500px;
     }
+    .appointment .line {
+        height: 2px;
+        background-color: #333;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .appointment .line2 {
+        height: 1px;
+        background-color: #333;
+        width: 50%;
+        margin: 1em auto;
+    }
+    .appointment .button {
+        font-size: .7em;
+        font-weight: normal;
+        background-color: lightcoral;
+        padding: 10px 70px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: black;
+    }
     .serve {
         grid-template-columns: repeat(1, 1fr);
     }
