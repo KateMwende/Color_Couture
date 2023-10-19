@@ -397,6 +397,7 @@ html body {
 
     #about {
         margin-top: 0;
+        padding-right: 1em;
     }
     .nav-list {
         display: flex; /* Display the list items horizontally */
@@ -404,7 +405,7 @@ html body {
     }
 
     .nav-list li {
-        margin: 0 7px; /* Add spacing between list items */
+        margin: 7px 0; /* Add spacing between list items */
     }
 
     .nav-list a {
@@ -454,5 +455,7 @@ html body {
     .gel, .pedi, .mani, .tips, .builder, .ombre, .aclyrics, .wax {
         width: 70%;
         height: 200px;
+        display: block;
+        margin: 10px auto
     }
 }
