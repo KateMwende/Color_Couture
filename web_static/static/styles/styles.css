@@ -391,28 +391,36 @@ html body {
 }
 
 @media (max-width: 480px) {
+    #home {
+        margin-bottom: 0;
+    }
+
+    #about {
+        margin-top: 0;
+    }
     .nav-list {
         display: flex; /* Display the list items horizontally */
         justify-content: center; /* Center the list items horizontally */
     }
 
     .nav-list li {
-        margin: 0 10px; /* Add spacing between list items */
+        margin: 0 7px; /* Add spacing between list items */
     }
 
     .nav-list a {
         font-size: 14px; /* Reduce the font size */
+        font-weight: normal;
     }
-    .serve {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .gel, .pedi, .mani, .tips, .builder, .ombre, .aclyrics, .wax {
-        width: 70%;
-        height: 200;
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
     }
     .shop-name {
+        text-align: left;
         font-size: 1.5em;
-        margin-left: 70px;
+        margin-left: 7px;
     }
 
     .phone-number {
@@ -420,12 +428,9 @@ html body {
     }
 
     .phone {
-        text-align: center;
-        padding: 1px 100px;
-        margin-right: 70px;
-    }
-    .img-size {
-        max-height: 500px;
+        text-align: right;
+        padding: 1px 50px;
+        margin-right: 7px;
     }
     .line {
         height: 2px;
@@ -440,11 +445,14 @@ html body {
         width: 100%;
         margin: .5em auto;
     }
-    #home {
-        margin-bottom: 20px;
+    .img-size {
+        max-height: 500px;
     }
-
-    #about {
-        margin-top: 20px;
+    .serve {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gel, .pedi, .mani, .tips, .builder, .ombre, .aclyrics, .wax {
+        width: 70%;
+        height: 200px;
     }
 }
