@@ -378,23 +378,28 @@ html body {
         text-align: center;
     }
     .img-size {
-        max-height: 200px;
+        max-height: 500px;
     }
     .serve {
         grid-template-columns: repeat(2, 1fr);
+
     }
     .gel, .pedi, .mani, .tips, .builder, .ombre, .aclyrics, .wax {
-        width: 100%;
+        width: 70%;
         height: auto;
     }
 }
 
 @media (max-width: 480px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center; 
+    }
     .serve {
         grid-template-columns: repeat(1, 1fr);
     }
     .gel, .pedi, .mani, .tips, .builder, .ombre, .aclyrics, .wax {
-        width: 100%;
+        width: 70%;
         height: auto;
     }
     .shop-name {
@@ -407,8 +412,9 @@ html body {
 
     .phone {
         text-align: center;
+        padding: 1px 5px;
     }
     .img-size {
-        max-height: 200px;
+        max-height: 500px;
     }
 }
