@@ -14,7 +14,7 @@ const app = Vue.createApp({
       axios
         .post('https://color-couture.onrender.com/submit', {
           customer_name: this.customer_name,
-          date: moment(this.date, 'DD-MM-YYYY').format('YYYY-MM-DD'),
+          date: this.date,
           time: this.time,
           service: this.service,
           showNotification: false,
