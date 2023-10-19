@@ -226,7 +226,7 @@ html body {
         border-bottom-style: solid;
         height: 25px;
         position: fixed;
-        z-index: 101;
+        z-index: 2;
         width: 100%;
         background-color: white;
     }
@@ -234,7 +234,6 @@ html body {
         display: flex; /* Display the list items horizontally */
         justify-content: center; /* Center the list items horizontally */
         padding-left: 0;
-        z-index: 101;
     }
 
     .nav-list li {
@@ -251,7 +250,7 @@ html body {
         padding-top: 30px;
     }
     .nb {
-        margin-left: 30px;
+        margin-left: 60px;
         padding-left: 0;
         font-style: italic;
         font-weight: 100;
@@ -269,5 +268,6 @@ html body {
         padding-top: 20px;
         align-items: center;
         margin-left: 60px;
+        z-index: 1;
     }
 }
