@@ -247,10 +247,10 @@ html body {
     }
     #service-list {
         width: 80%;
-        padding-top: 70px;
+        padding-top: 30px;
     }
     .nb {
-        margin-left: 120px;
+        margin-left: 50%;
         font-style: italic;
         font-weight: 100;
     }
@@ -259,8 +259,9 @@ html body {
     }
     .photo {
         margin-left: 0;
+        margin-right: 0;
     }
     #appointment-form-container {
-        margin-left: 7px;
+        align-items: center;
     }
 }
