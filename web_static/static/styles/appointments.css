@@ -216,3 +216,48 @@ html body {
     margin: 0;
     padding: 0;
 }
+
+
+@media (max-width: 480px) {
+    .main-header {
+        border-bottom: thin;
+        border-bottom-style: solid;
+        height: 25px;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        background-color: white;
+    }
+    .nav-list {
+        display: flex; /* Display the list items horizontally */
+        justify-content: center; /* Center the list items horizontally */
+        padding-left: 0;
+    }
+
+    .nav-list li {
+        margin: 7px 0; /* Add spacing between list items */
+        padding-left: 0;
+    }
+
+    .nav-list a {
+        font-size: 14px; /* Reduce the font size */
+        font-weight: normal;
+    }
+    #service-list {
+        width: 100%;
+    }
+    .nb {
+        padding-left: 0;
+        font-style: italic;
+        font-weight: 100;
+    }
+    .hours {
+        padding-left: 0;
+    }
+    .photo {
+        margin-left: 7px;
+    }
+    #appointment-form-container {
+        margin-left: 7px;
+    }
+}
