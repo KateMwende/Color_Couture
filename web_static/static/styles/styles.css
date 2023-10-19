@@ -391,19 +391,28 @@ html body {
 }
 
 @media (max-width: 480px) {
-    #navbar {
-        flex-direction: column;
-        align-items: center; 
+    .nav-list {
+        display: flex; /* Display the list items horizontally */
+        justify-content: center; /* Center the list items horizontally */
+    }
+
+    .nav-list li {
+        margin: 0 10px; /* Add spacing between list items */
+    }
+
+    .nav-list a {
+        font-size: 14px; /* Reduce the font size */
     }
     .serve {
         grid-template-columns: repeat(1, 1fr);
     }
     .gel, .pedi, .mani, .tips, .builder, .ombre, .aclyrics, .wax {
         width: 70%;
-        height: auto;
+        height: 200;
     }
     .shop-name {
         font-size: 1.5em;
+        margin-left: 70px;
     }
 
     .phone-number {
@@ -412,9 +421,23 @@ html body {
 
     .phone {
         text-align: center;
-        padding: 1px 5px;
+        padding: 1px 100px;
+        margin-right: 70px;
     }
     .img-size {
         max-height: 500px;
+    }
+    .line {
+    height: 2px;
+    background-color: #333;
+    width: 100%;
+    margin: 0 auto;
+}
+
+    .line2 {
+        height: 1px;
+        background-color: #333;
+        width: 100%;
+        margin: .5em auto;
     }
 }
