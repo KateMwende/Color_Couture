@@ -480,6 +480,9 @@ html body {
     .serve {
         grid-template-columns: repeat(1, 1fr);
         text-decoration-line: none;
+        text-align: left;
+        font-weight: bold;
+        font-style: italic;
     }
     .gel, .pedi, .mani, .tips, .builder, .ombre, .aclyrics, .wax {
         width: 70%;
