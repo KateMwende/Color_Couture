@@ -111,7 +111,12 @@ html body {
     border-radius: 4px;
     cursor: pointer;
 }
-
+ /* Style past dates differently */
+#appointment-form input[type="date"]:read-only {
+    background-color: #f2f2f2;
+    color: #ccc;
+    cursor: not-allowed;
+}
 #appointment-form button[type="submit"]:hover {
     background-color:lavenderblush;
 }

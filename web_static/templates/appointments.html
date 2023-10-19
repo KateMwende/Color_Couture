@@ -150,5 +150,24 @@
       </footer>
     </div>
     <script src="../script.js"></script>
+    <script>
+      // JavaScript to prevent selection of past dates
+      document.addEventListener('DOMContentLoaded', function () {
+        const dateInput = document.getElementById('date');
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        let mm = today.getMonth() + 1; // January is 0
+        if (mm < 10) {
+          mm = '0' + mm; // Add a leading zero for single-digit months
+        }
+        let dd = today.getDate();
+        if (dd < 10) {
+          dd = '0' + dd; // Add a leading zero for single-digit days
+        }
+
+        // Set the min attribute to today's date
+        dateInput.setAttribute('min', `${yyyy}-${mm}-${dd}`);
+      });
+    </script>
   </body>
 </html>
