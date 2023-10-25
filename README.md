@@ -28,7 +28,7 @@ A snippet of the project: <img width="1436" alt="Screenshot 2023-07-11 at 18 14 
    For npm:
    npm install
 4. Configure the app by setting up the required environment variables.
-   Configure the application by setting up the required environment variables. These variables are typically stored in a file named .env. You might need to create this file and add the necessary configuration values. Refer to the project's documentation or configuration guide for details on the required environment variables.
+   Configure the application by setting up the required environment variables. These variables are typically stored in a file named .env. You might need to create this file and add the necessary configuration values.
 5. Start the local development server to run the app.
    Launch the local development server to run the application. Use the appropriate command for your project. This command is typically defined in your project's package.json file, often as start.
    For example, with npm:
